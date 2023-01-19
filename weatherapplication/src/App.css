@@ -38,6 +38,7 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 35px;
 }
 
 .Container {
@@ -380,6 +381,11 @@ body::after {
 
 
 @media all and (max-width: 560px) {
+
+  #root {
+    padding-top: 0px;
+  }
+
   .Container {
     width: 100%;
   }
