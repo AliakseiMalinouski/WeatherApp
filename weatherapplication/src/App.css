@@ -325,6 +325,9 @@ body::after {
   border-radius: 13px;
   color: white;
   font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 35px;
 }
 
 .Container .Main .Hint {
@@ -360,6 +363,9 @@ body::after {
   font-size: 22px;
   text-align: center;
   letter-spacing: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 35px;
 }
 
 .Container .Main .Loading {
