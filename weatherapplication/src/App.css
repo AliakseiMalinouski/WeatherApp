@@ -1,0 +1,395 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Oswald', sans-serif;
+  background-color: #202124;
+}
+
+body::after {
+  background-color:rgba(0, 0, 0, 0.5);
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.Container {
+  width: 560px;
+  margin: 0 auto;
+  height: 900px;
+  border-radius: 13px;
+}
+
+.Container .Main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 13px;
+  animation: main 1s linear;
+}
+
+@keyframes main {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Container .Main .Gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0, 0.8), rgba(0,0,0,0));
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  border-radius: 13px;
+}
+
+.Container .Main .Gradient .FlexblBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Container .Main .Gradient .FlexblBlock .CurrrentDate {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0px;
+  left: 0px;
+}
+
+.Container .Main .Gradient .FlexblBlock .CurrrentDate .Date {
+  position: relative;
+}
+
+.Container .Main .Gradient .FlexblBlock .CurrrentDate .Date p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 28px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input {
+  width: 70%;
+  height: 30px;
+  border: none;
+  padding-left: 20px;
+  border-radius: 13px;
+  opacity: 0.7;
+  font-weight: bold;
+  background-color: white;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input::placeholder {
+  opacity: 1;
+  color: black;
+  font-weight: 300;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools button {
+  width: 30%;
+  height: 25px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #F8F8FF;
+  opacity: 0.8;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools button:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools button:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data {
+  width: 100%;
+  height: 100%;
+  animation: main 1s linear;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .NameOfCountry {
+  font-size: 48px;
+  color: white;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .temperature {
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .temperature .Deg {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .StateWeather {
+  color: white;
+  font-size: 30px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .MaxMin {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .MaxMin span {
+  margin-right: 13px;
+  margin-left: 7px;
+  font-size: 18px;
+  color: white;
+  display: block;
+  position: relative;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .MaxMin span img {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+}
+
+
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .OtherInformation {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  height: auto;
+  border-radius: 13px;
+  position: relative;
+  z-index: 15;
+  border-radius: 13px;
+  padding-bottom: 15px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .OtherInformation .OpacityBlock {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #272d3b;
+  opacity: 0.7;
+  z-index: 10;
+  border-radius: 13px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .OtherInformation p {
+  color: white;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .OtherInformation h5 {
+  color: white;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+}
+
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .OtherInformation p .Icon {
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  position: absolute;
+  top: 5px;
+  right: 135px;
+}
+
+
+.Container .Main .Gradient .FlexblBlock .Data .AboutWeather .ImageWeather {
+  width: 80px;
+  margin-top: 20px;
+}
+
+.Container .Main .Error {
+  width: 100%;
+  padding-top: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  position: relative;
+  border-radius: 13px;
+  margin-top: 150px;
+}
+
+.Container .Main .Error .ErrorOpacityBlock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 10;
+  background-color: #272d3b;
+  border-radius: 13px;
+}
+
+
+.Container .Main .Error .ErrorContent {
+  position: relative;
+  z-index: 100;
+  border-radius: 13px;
+  color: white;
+  font-size: 22px;
+}
+
+.Container .Main .Hint {
+  width: 100%;
+  padding-top: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  position: relative;
+  border-radius: 13px;
+  margin-top: 150px;
+}
+
+
+.Container .Main .Hint .HintOpacityBlock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 10;
+  background-color: #272d3b;
+  border-radius: 13px;
+}
+
+
+.Container .Main .Hint .HintContent {
+  position: relative;
+  z-index: 100;
+  border-radius: 13px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.Container .Main .Loading {
+  display: block;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  animation: loading 0.5s linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media all and (max-width: 560px) {
+  .Container {
+    width: 100%;
+  }
+
+  .Container .Main {
+    width: 100%;
+  }
+
+  .Container .Main .Gradient .FlexblBlock .Tools input {
+    width: 90%;
+  }
+
+  .Container .Main .Gradient .FlexblBlock .Tools button {
+    width: 60%;
+  }
+}
