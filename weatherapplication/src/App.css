@@ -126,7 +126,7 @@ body::after {
   opacity: 0.7;
   font-weight: bold;
   background-color: white;
-  
+  font-size: 16px;
 }
 
 .Container .Main .Gradient .FlexblBlock .Tools input:focus {
