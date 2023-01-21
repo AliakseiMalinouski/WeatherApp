@@ -419,4 +419,8 @@ body::after {
   .Container .Main .Gradient .FlexblBlock .CurrrentDate .Date p {
     position: static;
   }
+
+  .Container .Main .Error .ErrorContent {
+    text-align: center;
+  }
 }
