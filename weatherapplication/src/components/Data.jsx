@@ -53,8 +53,8 @@ export const Data = React.memo(({name, wind, weather, main}) => {
                 </h4>
                 <p className="StateWeather">{weather.main}</p> 
                 <p className="MaxMin" style={weatherData.currentTemperatureMin > 10 ||  weatherData.currentTemperatureMin > 10 || weatherData.currentTemperatureMin <= -10 || weatherData.currentTemperatureMax <= -10 ? {paddingLeft: '20px'} : null}>
-                    <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
-                    <span>Max: {weatherData.currentTemperatureMax} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
+                    <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)}</span>
+                    <span>Max: {weatherData.currentTemperatureMax}</span>
                 </p>
                 <div className="OtherInformation">
                     <div className="OpacityBlock">
